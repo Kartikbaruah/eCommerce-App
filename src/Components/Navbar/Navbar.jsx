@@ -9,6 +9,11 @@ export const Navbar = () => {
 
     const [menu,setMenu] = useState("shop");
     const {getTotalCartItems} = useContext(ShopContext);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
   return (
     <div className='navbar'>
@@ -17,7 +22,7 @@ export const Navbar = () => {
             <p>URBANfASHION</p>
         </div>
         
-        <ul className='nav-menu'>
+        <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration: 'none'}} to='/'>Shop</Link>{menu==="shop"?<h/>:<></>}</li>
             <li onClick={()=>{setMenu("mens")}}><Link style={{textDecoration: 'none'}} to='/mens'>Men</Link>{menu==="mens"?<h/>:<></>}</li>
             <li onClick={()=>{setMenu("womens")}}><Link style={{textDecoration: 'none'}} to='/womens'>Women</Link>{menu==="womens"?<h/>:<></>}</li>
@@ -28,6 +33,10 @@ export const Navbar = () => {
             <Link to='/login'><button>Login</button></Link>
             <Link to='/cart'><img src={cart_icon} alt="" /></Link>
             <div className="nav-cart-count">{getTotalCartItems()}</div>
+        </div>
+
+        <div className="nav-hamburger" onClick={toggleMenu}>
+            {isMenuOpen ? '✖' : '☰'}
         </div>
     </div>
   )
