@@ -6,7 +6,7 @@ import hero_image from '../Assets/hero_image.png'
 
 export const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero-container'>
         <div className="hero-left">
             <h2>NEW ARRIVALS ONLY</h2>
             <div>
@@ -25,7 +25,6 @@ export const Hero = () => {
         <div className="hero-right">
             <img src={hero_image} alt="" />
         </div>
-
     </div>
   )
 }
