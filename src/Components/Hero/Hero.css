@@ -112,11 +112,11 @@
         width: 220px;
         height: 55px;
         font-size: 18px;
-        padding: 5px;
+        padding: 10px;
     }
 
     .hero-right {
-        padding: 20px;
+        padding: 0px;
     }
 
     .hero-right img {
