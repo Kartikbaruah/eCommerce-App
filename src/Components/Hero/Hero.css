@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .hero-container {
         flex-direction: column;
         text-align: center;
     }
