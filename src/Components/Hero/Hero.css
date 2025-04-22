@@ -89,10 +89,10 @@
 }
 
 @media (max-width: 768px) {
-    .hero-container {
+    /* .hero-container {
         flex-direction: column;
         text-align: center;
-    }
+    } */
 
     .hero-left {
         padding-left: 20px;
@@ -154,7 +154,7 @@
 }
 @media (min-width: 1025px) {
     .hero-container {
-         min-height: 100vh !important;
+        min-height: 100vh !important;
         background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%) !important;
         display: flex !important;
         flex-direction: row !important;
