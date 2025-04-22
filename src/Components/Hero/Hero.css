@@ -154,6 +154,11 @@
 }
 @media (min-width: 1025px) {
     .hero-container {
-      flex-direction: row !important;
+         min-height: 100vh !important;
+        background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%) !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        padding: 20px !important;
     }
   }
