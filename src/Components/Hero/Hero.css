@@ -152,3 +152,8 @@
         padding: 0 10px;
     }
 }
+@media (min-width: 1025px) {
+    .hero-container {
+      flex-direction: row !important;
+    }
+  }
