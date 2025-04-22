@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
 }
 .relatedproduct h1{
     color: #171717;
@@ -35,7 +34,7 @@
 
     .relatedproducts-item {
         flex-direction: column;
-        margin-left: 35px;
+        margin-left: 5px;
         gap: 15px;
         
     }

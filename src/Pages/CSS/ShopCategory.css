@@ -16,7 +16,7 @@
 }
 
 .shopcategory-sort {
-    padding: 10px 0px;
+    padding: 15px 15px;
     border-radius: 40px;
     border: 1px solid #888;
     font-size: 16px;
@@ -54,12 +54,14 @@
 @media (max-width: 1200px) {
     .shopcategory-products {
         grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
     }
 }
 
 @media (max-width: 900px) {
     .shopcategory-products {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
     }
 
     .shopcategory-sort, .shopcategory-indexSort p span {
@@ -70,6 +72,7 @@
 @media (max-width: 600px) {
     .shopcategory-products {
         grid-template-columns: 1fr;
+        margin-left: 20px;
     }
 
     .shopcategory-sort {
