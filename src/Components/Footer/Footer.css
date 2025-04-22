@@ -75,28 +75,43 @@
     background: #c7c7c7;
 }
 
-/* RESPONSIVE BREAKPOINTS */
 @media (max-width: 768px) {
     .footer-logo p {
         font-size: 32px;
     }
 
     .footer-links {
-        flex-direction: column;
         gap: 20px;
         font-size: 18px;
     }
 
-    .footer-social-icon {
-        gap: 15px;
-    }
-
     .footer-social-icon-container {
-        padding: 8px;
+        padding: 8px 10px;
     }
 
     .footer {
+        padding: 30px 10px;
         gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo p {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .footer-social-icon-container {
+        padding: 6px 8px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        gap: 20px;
     }
 
     .footer-copyright {

@@ -21,3 +21,22 @@
     display: flex;
     gap: 30px;
 }
+
+
+@media (max-width: 480px) {
+    .relatedproduct h1 {
+        font-size: 24px;
+    }
+
+    .relatedproduct hr {
+        width: 120px;
+        height: 4px;
+    }
+
+    .relatedproducts-item {
+        flex-direction: column;
+        margin-left: 35px;
+        gap: 15px;
+        
+    }
+}

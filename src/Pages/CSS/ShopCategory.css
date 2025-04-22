@@ -50,7 +50,7 @@
     font-weight: 500;
 }
 
-/* Responsive Breakpoints */
+
 @media (max-width: 1200px) {
     .shopcategory-products {
         grid-template-columns: repeat(3, 1fr);
